@@ -26,7 +26,6 @@ const Review = () => {
     return (
         <div className="shop-container">
             <div className="product-container">
-                <h1>Cart Items: {cart.length}</h1>
                 {
                     cart.map(pd => <ReviewItem 
                         key = {pd.key}
