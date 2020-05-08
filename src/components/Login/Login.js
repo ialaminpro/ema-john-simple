@@ -3,10 +3,12 @@ import Auth from './use-auth';
 
 const Login = () => {
     const auth = Auth();
-    console.log(auth);
     return (
         <div>
-            <button onClick={auth.signInWithGoogle}>Sign in with google</button>
+            {
+                auth.user?<button onClick={auth.signOut}>Sign out</button>:
+                <button onClick={auth.signInWithGoogle}>Sign in with google</button>
+            }
         </div>
     );
 };
