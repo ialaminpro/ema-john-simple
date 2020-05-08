@@ -1,0 +1,3 @@
+[2020-05-09 02:24:56.960] [sharedprocess] [info] main {"machineId":"671db0b76031feb3f2f40a03e8e8b608634f5c05317c2adf076f89835e97ef92","windowId":2}
+[2020-05-09 02:24:57.285] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/var/www/html/react/ema-john-simple/User/snippets'
+[2020-05-09 02:25:37.115] [sharedprocess] [info] Starting to clean up unused language packs.
