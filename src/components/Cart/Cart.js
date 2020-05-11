@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../../App';
+import { useAuth } from '../Login/useAuth';
 
 const Cart = (props) => {
     const cart = props.cart;
-    
-    const user = useContext(UserContext);
+    const auth = useAuth();
+    console.log(auth);
     
     // const total = cart.reduce((total, prd) => total + prd.price, 0);
     let total = 0;
@@ -43,7 +44,7 @@ const Cart = (props) => {
             {
                 props.children
             }
-            <p>{user}</p>
+            
         </div>
     );
 };
